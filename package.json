@@ -1,0 +1,21 @@
+{
+  "name": "wd045-node-postgresql-exercise",
+  "version": "1.0.0",
+  "description": "Exercise conecting PostgreSQl to Express API",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js",
+    "dev":"nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAMCB/WD045-Node-PostgreSQL-Exercise.git"
+  },
+  "author": "Miguel Borges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAMCB/WD045-Node-PostgreSQL-Exercise/issues"
+  },
+  "homepage": "https://github.com/MAMCB/WD045-Node-PostgreSQL-Exercise#readme"
+}
