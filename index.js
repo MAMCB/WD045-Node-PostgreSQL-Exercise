@@ -29,6 +29,15 @@ app.get("/api/users/:id",(req,res)=>{
     })
 })
 
+app.post("/api/users",(req,res)=>{
+    const {first_name,last_name,age}= req.body;
+    pool.query("INSERT into users (first_name,last_name,age) VALUES($1,$2,$3) RETURNING *;",[first_name,last_name,age]).then(data=>{
+        res.json(data.rows[0]);
+    }).catch(e=>{
+        res.status(500).json({message:e.message});
+    })
+})
+
 
 
 app.listen(port,()=>console.log(`Server listening on port ${port}`));
