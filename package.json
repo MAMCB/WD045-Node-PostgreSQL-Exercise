@@ -4,8 +4,8 @@
   "description": "Exercise conecting PostgreSQl to Express API",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js",
-    "dev":"nodemon",
+    "start": "node index.js",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/MAMCB/WD045-Node-PostgreSQL-Exercise/issues"
   },
-  "homepage": "https://github.com/MAMCB/WD045-Node-PostgreSQL-Exercise#readme"
+  "homepage": "https://github.com/MAMCB/WD045-Node-PostgreSQL-Exercise#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3"
+  }
 }
